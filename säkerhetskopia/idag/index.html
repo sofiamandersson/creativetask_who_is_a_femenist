@@ -1,0 +1,252 @@
+<!DOCTYPE html> 
+
+<html lang="sv-SE"> 	<head>		<meta charset="utf-8"/>		<title> html mall </title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript">
+		
+			window.onload = function (){ Alert.render('This is a Creative Task for Hyper Island 2015. The site only contains HTML, CSS and some JavaScript and the images are SVG files. Hope you enjoy!');}
+			
+			
+			function CustomAlert (){
+				
+				this.render = function(di){
+					var winW = window.innerWidth;
+					var winH = window.innerHeight;
+					var dioverlay = document.getElementById ('dioverlay');
+					var dibox = document.getElementById('dibox');
+					dioverlay.style.display = "block";
+					dioverlay.style.height = winH+"px";
+					dibox.style.left = (winW/2) - (550 * 0.5)+"px";
+					dibox.style.top = "150px";
+					dibox.style.display = "block";
+					document.getElementById('diboxhead').innerHTML = "OH HI!";
+					document.getElementById('diboxbody').innerHTML = di;
+					document.getElementById('diboxfoot').innerHTML = '<button onclick="Alert.ok();fade();">Let\'s see more!</button>';
+				}
+				
+				this.ok = function (){
+					document.getElementById('dibox').style.display = "none";
+					document.getElementById('dioverlay').style.display = "none";
+				}
+				
+			}
+			
+			var Alert = new CustomAlert();
+			
+				
+			function showAnswer1() {
+				document.getElementById('answer1').style.visibility = "visible";
+			};
+			
+			
+			function showAnswer2() {
+				document.getElementById('answer2').style.visibility = "visible";
+			};
+			
+			
+			
+			function fade() {
+				var elem = document.getElementById('fade1');
+				fade1.style.transition = "opacity 1s linear 0.5s";
+				fade1.style.opacity = 1;
+				var elem = document.getElementById('fade2');
+				fade2.style.transition = "opacity 1s linear 1.5s";
+				fade2.style.opacity = 1;
+				var elem = document.getElementById('fade3');
+				fade3.style.transition = "opacity 1s linear 2.5s";
+				fade3.style.opacity = 1;
+				var elem = document.getElementById('fade4');
+				fade4.style.transition = "opacity 1s linear 3.5s";
+				fade4.style.opacity = 1;
+				var elem = document.getElementById('fade5');
+				fade5.style.transition = "opacity 1s linear 4.5s";
+				fade5.style.opacity = 1;
+			};
+			
+			
+			function yHandler () {
+				var contentHeight = wrap.offsetHeight;
+				var yOffset = window.pageYOffset;
+				var y = yOffset + window.innerHeight;
+				if(y >= contentHeight){
+					var elem = document.getElementById('fade6');
+					fade6.style.transition = "opacity 1s linear 0.5s";
+					fade6.style.opacity = 1;
+					var elem = document.getElementById('fade7');
+					fade7.style.transition = "opacity 1s linear 1.5s";
+					fade7.style.opacity = 1;
+					var elem = document.getElementById('fade8');
+					fade8.style.transition = "opacity 1s linear 2.5s";
+					fade8.style.opacity = 1;
+					var elem = document.getElementById('fade9');
+					fade9.style.transition = "opacity 1s linear 3.5s";
+					fade9.style.opacity = 1;
+					var elem = document.getElementById('fade10');
+					fade10.style.transition = "opacity 1s linear 4.5s";
+					fade10.style.opacity = 1;
+				}
+			}
+			
+			window.onscroll = yHandler;
+			
+
+		</script>	
+	</head>	<body> 
+	<div id="dioverlay"></div>
+	<div id="dibox">
+		<div>
+			<div id="diboxhead"></div>
+			<div id="diboxbody"></div>
+			<div id="diboxfoot"></div>
+		</div>
+	</div>
+	
+	<header id="hejhej">
+		<object>
+		
+
+			<svg version="1.1" id="fisk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 222.2 337.9" style="enable-background:new 0 0 222.2 337.9;" xml:space="preserve">
+<path class="str" style="fill:none;stroke:#fff;stroke-miterlimit:10;" d="M181.2,112.4c0,39.5-31.6,71.6-70.7,71.6s-70.7-32-70.7-71.6 s31.6-71.6,70.7-71.6S181.2,72.9,181.2,112.4z M110.5,8.2C51.8,8.2,4.1,54.9,4.1,112.4s47.6,104.3,106.4,104.3 S216.9,170,216.9,112.4S169.3,8.2,110.5,8.2z M95.5,215.5l0.2,48H50.3v23.1l45,0.4v47.7l33-0.3V287l50-1.1v-23l-49-0.1l0.1-47.8 M129.1,181.7l0.1-15.4c0,0,0-1.9,1.5-2.8c0.4-0.2,4.3-3.4,5.6-4.3c2.5-1.7,17.8-9.9,20.6-13.8c1.5-2.1,7.2-14.9,4.1-26.2 c-3.1-11.3-21.1-11.2-22.4-10.9c-3.2,0.7-10,1.8-14.2,0.1c-3.5-1.4-12.2-2.9-22.1,0.5s0.7,17.9,3,18.9c1.6,0.7,13.6,3.1,14.3,4.7 c0.6,1.6-7-0.1-9.2-0.8c-3.8-1.3-28.4-7.3-35.6-5.3s3.4,23.7,4.7,25.3c1.2,1.6,10.2,9.5,14.1,12.8c1,0.8,1.6,2,1.6,3.3V183 M133.7,72.2c0,0-1.4,28.2,0.8,30.1c2.2,1.8,17.1,11.9,19.7-2.2c2.7-14.1-2.9-26-7-27.8C143,70.2,137.8,60.9,133.7,72.2 M128.5,63.6 c-2.7-9.1-23,0.2-23.3,0.9c-0.3,0.7-0.2,6.2,3,27.2c3.2,21,22.4,11.3,22.4,11.3C132.1,103.4,131.2,72.7,128.5,63.6z M92.2,63.1 c0,0-13.8,1.7-9.2,23.4c4.6,21.7,4.3,22.2,6.7,22.7c2.4,0.4,19.7-0.6,19.7-5.6s-7.1-33.1-7.3-33.7C102,69.2,100.9,62.5,92.2,63.1z M69.3,79.4c0,0-10.1,3.9-7.3,20.8c2.8,16.9,3.4,19.8,5.9,20.8c2.1,0.9,12.7,3.6,14.2-3.5c1.5-7.1,0.2-21.2,0-22.9 C81.7,91.9,82.3,73.6,69.3,79.4z"/>
+<path style="fill:none;stroke:#fff;stroke-miterlimit:10;" d="M222.2,171.3"/>
+</svg>
+		
+	
+			</object>
+	
+	</header>
+		
+	<div id="wrap">
+		<section id="start">
+		
+				<h1>Who is<br> feminists?</h1>
+			
+			<div class="fadeF">
+				<p id="fade1">Fördom 1</p>
+				<p id="fade2">Fördom 2</p>
+				<p id="fade3">Fördom 3</p>
+				<p id="fade4">Fördom 4</p>
+				<p id="fade5">Fördom 5</p>		
+			</div>
+			
+			
+			
+		</section>
+		
+		<section class="color2">
+			<div class="arrow1"></div>
+				<article>
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+				
+				<fieldset class="right">
+				<h2>True or False? There is more women then men living in the world.</h2>
+					
+					<ul>
+					<div class="cap">
+					<li class="lileft"><input type="radio" name="rw1" value="incorrect" onclick="showAnswer1()">
+						<label class="incorrect"><span><span></span></span>TRUE</label>
+					</li>					
+					</div>
+					
+					<div class="cap">
+	    			<li class="liright"><input type="radio" name="rw1" value="correct" onclick="showAnswer1()">
+	    				<label class="correct"><span><span></span></span>FALSE</label>
+	    			</li>
+					</div>
+					</ul>
+					
+					<div class="display" id="answer1">
+					<p>Rätt svar är falskt. Även fast kvinnor generellt sett liver längre än män så är det inte helt ovanligt flickor i exempelvis Etiopien får mindre mat än sina bröder vilket ökar dödligheten för flickor med 50%. Det är även många föräldrar i Asien som väljer att göra abort när de vet att det är en flicka.</p>
+					</div>
+			
+						
+    			</fieldset>
+				
+		</section>
+		
+		<section class="color3">
+			<div class="arrow2"></div>
+				
+				
+				
+    			
+				
+				<article class="right">
+				<h2>Test</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+		</section>
+		
+		<section class="color1">
+			<div class="arrow1"></div>
+				<article>
+					<h2>About hej</h2>
+						<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+					</article>
+					
+					
+				
+		</section>
+		
+		<section class="color2">
+			<div class="arrow2"></div>
+			<fieldset>
+				<h2>Fråga?</h2>
+				
+				
+				
+				
+    			</fieldset>
+				
+			<article class="right">
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+		</section>
+	
+		<section class="color3">
+			<div class="arrow1"></div>
+			<article>
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+				<fieldset class="right">
+				<h2>Fråga?</h2>
+				
+			
+				
+				
+    			</fieldset>
+				
+		</section>
+		
+		<section class="color1">
+			<div class="arrow2"></div>
+			<div id="last">
+			<h2>Who are <br>feminists acually?</h2>
+			<div class="fadeL">
+				<p id="fade6">Sanning 1</p>
+				<p id="fade7">Sanning 2</p>
+				<p id="fade8">Sanning 3</p>
+				<p id="fade9">Sanning 4</p>
+				<p id="fade10">Sanning 5</p>	
+			</div>
+			
+			</div>
+		</section>
+		
+		<footer>
+			<address>
+				<p>@ | <a href="sofia.m.andersson@outlook.com">sofia.m.andersson@outlook.com</a>
+				</p>
+			</address>
+		</footer>
+	</div>
+	
+	
+	
+	
+	
+	
+	</body> </html>

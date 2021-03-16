@@ -1,0 +1,353 @@
+<!DOCTYPE html> 
+
+<html lang="sv-SE"> 	<head>		<meta charset="utf-8"/>		<title> html mall </title>
+		<link rel="stylesheet" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script></script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script>
+		
+		$(document).ready(function () {
+			
+			
+			var showYO1 = $("#hideopp1").offset().top;
+			var showYO2 = $("#hideopp2").offset().top;
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > showYO1 && $(window).scrollTop() < showYO2) {
+					$("#yopp1").show();
+				} else {
+					$("#yopp1").hide();
+				}
+			});
+			
+			
+			var showYO3 = $("#hideopp3").offset().top;
+			var showYO4 = $("#hideopp4").offset().top;
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > showYO3 && $(window).scrollTop() < showYO4) {
+					$("#yopp2").show();
+				} else {
+					$("#yopp2").hide();
+				}
+			});
+			
+			var showYO5 = $("#hideopp5").offset().top;
+			var showYO6 = $("#hideopp6").offset().top;
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > showYO5 && $(window).scrollTop() < showYO6) {
+					$("#yopp3").show();
+				} else {
+					$("#yopp3").hide();
+				}
+			});
+			
+			var showYO7 = $("#hideopp7").offset().top;
+			var showYO8 = $("#hideopp8").offset().top;
+			$(window).scroll(function () {
+				if ($(window).scrollTop() > showYO7 && $(window).scrollTop() < showYO8) {
+					$("#yopp4").show();
+				} else {
+					$("#yopp4").hide();
+				}
+			});
+			
+			
+		});
+		 
+		
+		</script>
+		<script type="text/javascript">
+		
+			window.onload = function (){ Alert.render('My name is Sofia Andersson and this is my Creative Task for Hyper Island the spring of 2015. I wanted to raise the matter of feminism and the stereotypes regarding its followers. This site is made to hopefully, in some regards, solves the matter or just inliting the visitor about feminism. The site only contains HTML, CSS and some JavaScript and the images are SVG files. Hope you enjoy!');}
+			
+			
+			function CustomAlert (){
+				
+				this.render = function(di){
+					var winW = window.innerWidth;
+					var winH = window.innerHeight;
+					var dioverlay = document.getElementById ('dioverlay');
+					var dibox = document.getElementById('dibox');
+					dioverlay.style.display = "block";
+					dioverlay.style.height = winH+"px";
+					dibox.style.left = (winW/2) - (550 * 0.5)+"px";
+					dibox.style.top = "150px";
+					dibox.style.display = "block";
+					document.getElementById('diboxhead').innerHTML = "OH HI!";
+					document.getElementById('diboxbody').innerHTML = di;
+					document.getElementById('diboxfoot').innerHTML = '<button onclick="Alert.ok();fade();">Let\'s see more!</button>';
+				}
+				
+				this.ok = function (){
+					document.getElementById('dibox').style.display = "none";
+					document.getElementById('dioverlay').style.display = "none";
+				}
+				
+			}
+			
+			var Alert = new CustomAlert();
+			
+				
+			function showAnswer1() {
+				document.getElementById('answer1').style.visibility = "visible";
+			};
+			
+			
+			function showAnswer2() {
+				document.getElementById('answer2').style.visibility = "visible";
+			};
+			
+			
+			
+			function fade() {
+				var elem = document.getElementById('fade1');
+				fade1.style.transition = "opacity 1s linear 0.5s";
+				fade1.style.opacity = 1;
+				var elem = document.getElementById('fade2');
+				fade2.style.transition = "opacity 1s linear 1.5s";
+				fade2.style.opacity = 1;
+				var elem = document.getElementById('fade3');
+				fade3.style.transition = "opacity 1s linear 2.5s";
+				fade3.style.opacity = 1;
+				var elem = document.getElementById('fade4');
+				fade4.style.transition = "opacity 1s linear 3.5s";
+				fade4.style.opacity = 1;
+				var elem = document.getElementById('fade5');
+				fade5.style.transition = "opacity 1s linear 4.5s";
+				fade5.style.opacity = 1;
+			};
+			
+			
+			function yHandler () {
+				var contentHeight = wrap.offsetHeight;
+				var yOffset = window.pageYOffset;
+				var y = yOffset + window.innerHeight;
+				if(y >= contentHeight){
+					var elem = document.getElementById('fade6');
+					fade6.style.transition = "opacity 1s linear 0.5s";
+					fade6.style.opacity = 1;
+					var elem = document.getElementById('fade7');
+					fade7.style.transition = "opacity 1s linear 1.5s";
+					fade7.style.opacity = 1;
+					var elem = document.getElementById('fade8');
+					fade8.style.transition = "opacity 1s linear 2.5s";
+					fade8.style.opacity = 1;
+					var elem = document.getElementById('fade9');
+					fade9.style.transition = "opacity 1s linear 3.5s";
+					fade9.style.opacity = 1;
+					var elem = document.getElementById('fade10');
+					fade10.style.transition = "opacity 1s linear 4.5s";
+					fade10.style.opacity = 1;
+				}
+			}
+			
+			window.onscroll = yHandler;
+			
+			
+			
+		</script>	
+	</head>	<body> 
+	<div id="dioverlay"></div>
+	<div id="dibox">
+		<div>
+			<div id="diboxhead"></div>
+			<div id="diboxbody"></div>
+			<div id="diboxfoot"></div>
+		</div>
+	</div>
+	
+			
+	<div id="wrap">
+	
+		<section id="start">
+			<div id="hideopp1">
+		
+					<h1>Who are<br> #feminists?</h1>
+				
+					<div class="fadeF">
+						<p id="fade1">Lesbians</p>
+						<p id="fade2">Man-haters</p>
+						<p id="fade3">Troublesome</p>
+						<p id="fade4">Bra-burners</p>
+						<p id="fade5">Humorless</p>		
+					</div>
+			
+			</div>
+		</section>
+		
+		
+		<section class="color2">
+			<div class="arrow1"></div>
+				
+					<h2 class="oppinion" id="yopp1">What do you think?</h2>
+				
+		</section>
+		
+		<section class="color3">
+			<div id="hideopp2">
+			<div class="arrow2"></div>
+		
+					
+					<fieldset>
+					<h2>True or False? There is more women then men living in the world.</h2>
+						
+						<ul>
+						<div class="cap">
+						<li class="lileft"><input type="radio" name="rw1" value="incorrect" onclick="showAnswer1()">
+							<label class="incorrect"><span><span></span></span>TRUE</label>
+						</li>					
+						</div>
+						
+						<div class="cap">
+		    			<li class="liright"><input type="radio" name="rw1" value="correct" onclick="showAnswer1()">
+		    				<label class="correct"><span><span></span></span>FALSE</label>
+		    			</li>
+						</div>
+						</ul>
+						
+						<div class="display" id="answer1">
+						<p>Rätt svar är falskt. Även fast kvinnor generellt sett liver längre än män så är det inte helt ovanligt flickor i exempelvis Etiopien får mindre mat än sina bröder vilket ökar dödligheten för flickor med 50%. Det är även många föräldrar i Asien som väljer att göra abort när de vet att det är en flicka.</p>
+						</div>
+	    			</fieldset>
+			</div>
+		</section>
+		
+		
+		
+		<section class="color1">
+			<div id="hideopp3">
+			<div class="arrow1"></div>
+			
+					<article>
+					<h2>What feminism isn't:</h2>
+						<p>People tend to believe that feminism is about women having more influence and power than men. But feminism is really about women having equally as much influence and power as men have. Gender shouldn’t be a matter of social position. The description above can apply on anyone, regardless gender, social class, appearance. A feminist is someone with beliefs and complies the objectives of gender equality.  This doesn’t necessarily have to be a person who is political active, just as someone who call themselves a environmentalist don’t have to be at the frontline for saving the rainforest from getting slaughtered. The description above can apply on anyone, regardless gender, social class, appearance. A feminist is someone with beliefs and complies the objectives of gender equality.  This doesn’t necessarily have to be a person who is political active, just as someone who call themselves a environmentalist don’t have to be at the frontline for saving the rainforest from getting slaughtered.</p>
+					</article>
+					
+					
+					
+
+			</div>
+		</section>
+		
+		<section class="color2">
+			<div class="arrow2"></div>
+			
+				<h2 class="oppinion" id="yopp2">Din åsikt2</h2>
+			
+		</section>
+	
+		<section class="color3">
+			<div id="hideopp4">
+			<div class="arrow1"></div>
+				
+				
+				<h2 id="ner">Bilder på kändisar</h2>
+					
+					
+			</div>	
+		</section>
+		
+		
+		<section class="color1">
+			<div id="hideopp5">
+			<div class="arrow2"></div>
+		
+				<article>
+						<h2>About</h2>
+							<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis. The description above can apply on anyone, regardless gender, social class, appearance. A feminist is someone with beliefs and complies the objectives of gender equality.  This doesn’t necessarily have to be a person who is political active, just as someone who call themselves a environmentalist don’t have to be at the frontline for saving the rainforest from getting slaughtered. The description above can apply on anyone, regardless gender, social class, appearance. A feminist is someone with beliefs and complies the objectives of gender equality.  This doesn’t necessarily have to be a person who is political active, just as someone who call themselves a environmentalist don’t have to be at the frontline for saving the rainforest from getting slaughtered.</p>
+				</article>
+		
+			</div>
+		</section>
+		
+		
+		<section class="color2">
+			<div class="arrow2"></div>
+			
+				<h2 class="oppinion" id="yopp3">Din åsikt3</h2>
+			
+		</section>
+		
+		
+		<section class="color3">
+			<div id="hideopp6">
+			<div class="arrow2"></div>
+		
+					<article>
+					<h2>What feminism is:</h2>
+					<div class="column">
+						<p>A feminist is a person who believes that women - simply by being women – are minor to men. Instead our world should be equal no matter gender.</p> 	<p>The description above can apply on anyone, regardless gender, social class, appearance. A feminist is someone with beliefs and complies the objectives of gender equality.  This doesn’t necessarily have to be a person who is political active, just as someone who call themselves a environmentalist don’t have to be at the frontline for saving the rainforest from getting slaughtered. The description above can apply on anyone, regardless gender, social class, appearance. A feminist is someone with beliefs and complies the objectives of gender equality. This doesn’t necessarily have to be a person who is political active, just as someone who call themselves a environmentalist don’t have to be at the frontline for saving the rainforest from getting slaughtered.The description above can apply on anyone, regardless gender, social class, appearance. A feminist is someone with beliefs and complies the objectives of gender equality.  This doesn’t necessarily have to be a person who is political active, just as someone who call themselves a environmentalist don’t have to be at the frontline for saving the rainforest from getting slaughtered.	</p>
+					</div>
+					</article>
+			</div>
+		</section>
+		
+		
+		
+		<section class="color1" id="bajs">
+			<div id="hideopp7">
+			<div class="arrow1"></div>
+					
+					<fieldset>
+					<h2>True or False? There is more women then men living in the world.</h2>
+						
+						<ul>
+						<div class="cap">
+						<li class="lileft"><input type="radio" name="rw1" value="incorrect" onclick="showAnswer1()">
+							<label class="incorrect"><span><span></span></span>TRUE</label>
+						</li>					
+						</div>
+						
+						<div class="cap">
+		    			<li class="liright"><input type="radio" name="rw1" value="correct" onclick="showAnswer1()">
+		    				<label class="correct"><span><span></span></span>FALSE</label>
+		    			</li>
+						</div>
+						</ul>
+						
+						<div class="display" id="answer1">
+						<p>Rätt svar är falskt. Även fast kvinnor generellt sett liver längre än män så är det inte helt ovanligt flickor i exempelvis Etiopien får mindre mat än sina bröder vilket ökar dödligheten för flickor med 50%. Det är även många föräldrar i Asien som väljer att göra abort när de vet att det är en flicka.</p>
+						</div>
+	    			</fieldset>
+
+			</div>
+		</section>
+		
+		<section class="color2">
+			<div class="arrow2"></div>
+			
+				<h2 class="oppinion" id="yopp4">Din åsikt4</h2>
+			
+		</section>
+		
+		<section class="color1">
+			<div id="hideopp8">
+			<div class="arrow2"></div>
+			
+				<div id="last">
+				<h2>Who are <br>feminists acually?</h2>
+					<div class="fadeL">
+						<p id="fade6">Women</p>
+						<p id="fade7">Men</p>
+						<p id="fade8">Straights</p>
+						<p id="fade9">Lesbians</p>
+						<p id="fade10">Anyone who believes<br> in social, political and <br>economic equality for<br>the genders. </p>	
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<address>
+				<p>@ | <a href="sofia.m.andersson@outlook.com">sofia.m.andersson@outlook.com</a>
+				</p>
+			</address>
+		</footer>
+	</div>
+	
+	
+	
+	
+	
+	
+	</body> </html>

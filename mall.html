@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+
+<html lang="sv-SE"> 	<head>		<meta charset="utf-8"/>		<title> html mall </title> 
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript">
+
+function correctCheck() {
+    if (document.getElementById('correctCheck').checked) {
+        document.getElementById('ifCorrect').style.display = 'block';
+    }
+    else document.getElementById('ifCorrect').style.display = 'none';
+
+}
+
+function wrongCheck() {
+    if (document.getElementById('wrongCheck').checked) {
+        document.getElementById('ifWrong').style.display = 'block';
+    }
+    else document.getElementById('ifWrong').style.display = 'none';
+
+}
+
+</script>
+	</head>	<body> 	<header id="scroll">	<h1>Sofia Andersson</h1>
+	</header>
+	<div id="wrap">
+	
+	
+		<section id="start">
+		
+		</section>
+		
+		<section class="color2">
+			<div class="arrow1"></div>
+				<article>
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+				
+				<fieldset class="right">
+				<h2>Fråga?</h2>
+				<p>
+					<input type="radio" onclick="javascript:correctwrongCheck();" name="correctwrong" value="correct" id="correctCheck">Alt 1
+					<input type="radio" onclick="javascript:correctwrongCheck();" name="correctwrong" value="wrong" id="wrongCheck">Alt 2
+					
+				</p>
+				<div id="ifCorrect" style="display:none">
+					<p>Right</p>
+				</div>
+				</fieldset>
+				
+		</section>
+		
+		<section class="color3">
+			<div class="arrow2"></div>
+				
+				<fieldset>
+				<h2>Fråga?</h2>
+				<p>Yes <input type="radio" onclick="javascript:correctCheck();" name="correctwrong" id="correctCheck"> 
+					<div id="ifCorrect" style="display:none">
+				        <p>Right</p>
+				    </div>
+				</p>
+    
+    <p>No <input type="radio" onclick="javascript:wrongCheck();" name="wrong" id="wrongCheck"><br>
+	
+	
+	<div id="ifWrong" style="display:none">
+        <p>Wrong</p>
+    </div></p>
+					
+				</p>
+				</fieldset>
+				<article class="right">
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+		</section>
+		
+		<section class="color1">
+			<div class="arrow1"></div>
+				<article>
+					<h2>About</h2>
+						<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+					</article>
+					<fieldset class="right">
+				<h2>Fråga?</h2>
+				<p>
+					<input type="radio" name="one" value="alt1">Alt 1
+					<input type="radio" name="one" value="alt2">Alt 2
+					<input type="radio" name="one" value="alt3">Alt 3
+					<input type="radio" name="one" value="alt4">Alt 4
+				</p>
+				</fieldset>
+				
+		</section>
+		
+		<section class="color2">
+			<div class="arrow2"></div>
+			<fieldset>
+				<h2>Fråga?</h2>
+				<p>
+					<input type="radio" name="one" value="alt1">Alt 1
+					<input type="radio" name="one" value="alt2">Alt 2
+					<input type="radio" name="one" value="alt3">Alt 3
+					<input type="radio" name="one" value="alt4">Alt 4
+				</p>
+				</fieldset>
+				
+			<article class="right">
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+		</section>
+	
+		<section class="color3">
+			<div class="arrow1"></div>
+			<article>
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+				<fieldset class="right">
+				<h2>Fråga?</h2>
+				<p>
+					<input type="radio" name="one" value="alt1">Alt 1
+					<input type="radio" name="one" value="alt2">Alt 2
+					<input type="radio" name="one" value="alt3">Alt 3
+					<input type="radio" name="one" value="alt4">Alt 4
+				</p>
+				</fieldset>
+				
+		</section>
+		
+		<footer>
+			<address>
+				<p>@ | <a href="sofia.m.andersson@outlook.com">sofia.m.andersson@outlook.com</a>
+				</p>
+			</address>
+		</footer>
+	</div>	</body>
+
+	 </html>

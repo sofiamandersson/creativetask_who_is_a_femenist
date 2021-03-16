@@ -1,0 +1,197 @@
+<!DOCTYPE html> 
+
+<html lang="sv-SE"> 	<head>		<meta charset="utf-8"/>		<title> html mall </title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript">
+			
+			window.onload = function (){ Alert.render('This is a Creative Task for Hyper Island 2015. Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at.\nUt vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.');}
+			
+			
+			function CustomAlert (){
+				
+				this.render = function(di){
+					var winW = window.innerWidth;
+					var winH = window.innerHeight;
+					var dioverlay = document.getElementById ('dioverlay');
+					var dibox = document.getElementById('dibox');
+					dioverlay.style.display = "block";
+					dioverlay.style.height = winH+"px";
+					dibox.style.left = (winW/2) - (550 * 0.5)+"px";
+					dibox.style.top = "100px";
+					dibox.style.display = "block";
+					document.getElementById('diboxhead').innerHTML = "OH HI!";
+					document.getElementById('diboxbody').innerHTML = di;
+					document.getElementById('diboxfoot').innerHTML = '<button onclick="Alert.ok()">Let\'s see more!</button>';
+				}
+				
+				this.ok = function (){
+					document.getElementById('dibox').style.display = "none";
+					document.getElementById('dioverlay').style.display = "none";
+				}
+				
+			}
+			
+			var Alert = new CustomAlert();
+			
+			
+			function showAnswer1() {
+				document.getElementById('answer1').style.visibility = 'visible';
+			};
+			
+			function showAnswer2() {
+				document.getElementById('answer2').style.visibility = 'visible';
+			};
+			
+	
+		</script>	
+	</head>	<body> 
+	<div id="dioverlay"></div>
+	<div id="dibox">
+		<div>
+			<div id="diboxhead"></div>
+			<div id="diboxbody"></div>
+			<div id="diboxfoot"></div>
+		</div>
+	</div>
+	
+		<header id="scroll">			<p>Sofia Andersson</p>	
+		</header>
+	<div id="wrap">
+	
+		<section id="start">
+			<h1>What is <br> feminism?</h1>
+			<div class="fade">
+				<p>Rad 1</p>
+				<p>Rad 2</p>
+				<p>Rad 3</p>
+				<p>Rad 4</p>
+				<p>Rad 5</p>
+				<p>Rad 6</p>				
+			</div>
+		</section>
+		
+		<section class="color2">
+			<div class="arrow1"></div>
+				<article>
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+				
+				<fieldset class="right">
+				<h2>True or False? There is more women then men living in the world.</h2>
+					
+					<ul>
+					<div class="cap">
+					<li class="lileft"><input type="radio" name="rw1" value="incorrect" onclick="showAnswer1()">
+						<label class="incorrect"><span><span></span></span>TRUE</label>
+					</li>					
+					</div>
+					
+					<div class="cap">
+	    			<li class="liright"><input type="radio" name="rw1" value="correct" onclick="showAnswer1()">
+	    				<label class="correct"><span><span></span></span>FALSE</label>
+	    			</li>
+					</div>
+					</ul>
+					
+					<div class="display" id="answer1">
+					<p>Rätt svar är falskt. Även fast kvinnor generellt sett liver längre än män så är det inte helt ovanligt flickor i exempelvis Etiopien får mindre mat än sina bröder vilket ökar dödligheten för flickor med 50%. Det är även många föräldrar i Asien som väljer att göra abort när de vet att det är en flicka.</p>
+					</div>
+			
+						
+    			</fieldset>
+				
+		</section>
+		
+		<section class="color3">
+			<div class="arrow2"></div>
+				
+				<fieldset>
+					<h2>True or False? There is more women then men living in the world.</h2>
+					
+					<ul>
+					<div class="cap">
+					<li class="lileft"><input type="radio" name="rw2" value="incorrect" onclick="showAnswer2()">
+						<label class="incorrect"><span><span></span></span>TRUE</label>
+					</li>					
+					</div>
+					
+					<div class="cap">
+	    			<li class="liright"><input type="radio" name="rw2" value="correct" onclick="showAnswer2()">
+	    				<label class="correct"><span><span></span></span>FALSE</label>
+	    			</li>
+					</div>
+					</ul>
+					
+					<div class="display" id="answer2">
+					<p>Rätt svar är falskt. Även fast kvinnor generellt sett liver längre än män så är det inte helt ovanligt flickor i exempelvis Etiopien får mindre mat än sina bröder vilket ökar dödligheten för flickor med 50%. Det är även många föräldrar i Asien som väljer att göra abort när de vet att det är en flicka.</p>
+					</div>
+				
+    			</fieldset>
+				
+				<article class="right">
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+		</section>
+		
+		<section class="color1">
+			<div class="arrow1"></div>
+				<article>
+					<h2>About</h2>
+						<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+					</article>
+					<fieldset class="right">
+				
+				
+				
+    			</fieldset>
+				
+		</section>
+		
+		<section class="color2">
+			<div class="arrow2"></div>
+			<fieldset>
+				<h2>Fråga?</h2>
+				
+				
+				
+				
+    			</fieldset>
+				
+			<article class="right">
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+		</section>
+	
+		<section class="color3">
+			<div class="arrow1"></div>
+			<article>
+				<h2>About</h2>
+					<p>Nulla et blandit mi. Maecenas facilisis venenatis ultrices. In interdum venenatis ligula, nec hendrerit mauris tristique at. Ut vestibulum in leo vel dapibus. Duis commodo ex sit amet nibh lacinia, quis ultrices leo tincidunt. Suspendisse accumsan sapien ut malesuada dictum. In non hendrerit metus, eu porta nunc. Maecenas id tincidunt lorem. Maecenas ac sapien est. Praesent cursus molestie venenatis.</p>
+				</article>
+				<fieldset class="right">
+				<h2>Fråga?</h2>
+				
+			
+				
+				
+    			</fieldset>
+				
+		</section>
+		
+		<footer>
+			<address>
+				<p>@ | <a href="sofia.m.andersson@outlook.com">sofia.m.andersson@outlook.com</a>
+				</p>
+			</address>
+		</footer>
+	</div>
+	
+	
+	
+	
+	
+	
+	</body> </html>
